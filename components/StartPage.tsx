@@ -50,22 +50,6 @@ export default function StartPage() {
       description: 'Explora la rica historia numismática europea a través de sus monedas más emblemáticas.',
       featured: 'Britannia',
       countries: 15
-    },
-    { 
-      id: 'asia', 
-      name: 'Asia',
-      image: '/images/asia.jpg',
-      description: 'Sumérgete en la fascinante colección de monedas asiáticas y su significado cultural.',
-      featured: 'Panda Chino',
-      countries: 10
-    },
-    { 
-      id: 'africa', 
-      name: 'Africa',
-      image: '/images/africa.jpg',
-      description: 'Conoce las monedas africanas y su importante papel en la historia del continente.',
-      featured: 'Krugerrand',
-      countries: 10
     }
   ];
 
