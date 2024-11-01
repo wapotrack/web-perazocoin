@@ -114,6 +114,16 @@ const NavBar = () => {
                 Buscar
               </Text>
             </Link>
+            <Link href="/admin" passHref>
+              <Text
+                fontWeight="bold"
+                color={textColor}
+                _hover={{ color: 'blue.500', textDecoration: 'none' }}
+                cursor="pointer"
+              >
+                Poner monedas bauti xd jashjfhawuajaj
+              </Text>
+            </Link>
           </Flex>
         </Flex>
       </Container>
