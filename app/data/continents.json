@@ -1,22 +1,22 @@
 {
   "america": {
-    "name": "America",
+    "name": "América",
     "gradient": "linear(to-r, red.400, orange.500)",
     "countries": {
-      "USA": {
-        "name": "United States",
+      "United States": {
+        "name": "Estados Unidos",
         "flag": "🇺🇸"
       },
       "Canada": {
-        "name": "Canada",
+        "name": "Canadá",
         "flag": "🇨🇦"
       },
       "Mexico": {
-        "name": "Mexico",
+        "name": "México",
         "flag": "🇲🇽"
       },
       "Brazil": {
-        "name": "Brazil",
+        "name": "Brasil",
         "flag": "🇧🇷"
       },
       "Argentina": {
@@ -32,30 +32,114 @@
         "flag": "🇨🇴"
       },
       "Peru": {
-        "name": "Peru",
+        "name": "Perú",
         "flag": "🇵🇪"
       }
     }
   },
   "europe": {
-    "name": "Europe",
+    "name": "Europa",
     "gradient": "linear(to-r, blue.400, teal.500)",
     "countries": {
       "UK": {
-        "name": "United Kingdom",
+        "name": "Reino Unido",
         "flag": "🇬🇧"
       },
       "Germany": {
-        "name": "Germany",
+        "name": "Alemania",
         "flag": "🇩🇪"
       },
       "France": {
-        "name": "France",
+        "name": "Francia",
         "flag": "🇫🇷"
       },
       "Spain": {
-        "name": "Spain",
+        "name": "España",
         "flag": "🇪🇸"
+      },
+      "Italy": {
+        "name": "Italia",
+        "flag": "🇮🇹"
+      },
+      "Netherlands": {
+        "name": "Países Bajos",
+        "flag": "🇳🇱"
+      },
+      "Portugal": {
+        "name": "Portugal",
+        "flag": "🇵🇹"
+      },
+      "Switzerland": {
+        "name": "Suiza",
+        "flag": "🇨🇭"
+      },
+      "Austria": {
+        "name": "Austria",
+        "flag": "🇦🇹"
+      },
+      "Belgium": {
+        "name": "Bélgica",
+        "flag": "🇧🇪"
+      },
+      "Sweden": {
+        "name": "Suecia",
+        "flag": "🇸🇪"
+      },
+      "Norway": {
+        "name": "Noruega",
+        "flag": "🇳🇴"
+      },
+      "Denmark": {
+        "name": "Dinamarca",
+        "flag": "🇩🇰"
+      },
+      "Finland": {
+        "name": "Finlandia",
+        "flag": "🇫🇮"
+      },
+      "Greece": {
+        "name": "Grecia",
+        "flag": "🇬🇷"
+      },
+      "Ireland": {
+        "name": "Irlanda",
+        "flag": "🇮🇪"
+      },
+      "Poland": {
+        "name": "Polonia",
+        "flag": "🇵🇱"
+      },
+      "Romania": {
+        "name": "Rumanía",
+        "flag": "🇷🇴"
+      },
+      "Hungary": {
+        "name": "Hungría",
+        "flag": "🇭🇺"
+      },
+      "Czech_Republic": {
+        "name": "República Checa",
+        "flag": "🇨🇿"
+      },
+      "Bulgaria": {
+        "name": "Bulgaria",
+        "flag": "🇧🇬"
+      },
+      "Slovakia": {
+        "name": "Eslovaquia",
+        "flag": "🇸🇰"
+      },
+      "Croatia": {
+        "name": "Croacia",
+        "flag": "🇭🇷"
+      },
+      "Slovenia": {
+        "name": "Eslovenia",
+        "flag": "🇸🇮"
+      },
+      "Ionian_Islands": {
+        "name": "Islas Jónicas",
+        "flag": "🇬🇷"
       }
     }
   }
