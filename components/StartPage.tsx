@@ -173,9 +173,9 @@ export default function StartPage() {
                 backdropFilter="blur(10px)"
               >
                 {[
-                  { label: 'Continentes', value: '4' },
-                  { label: 'Países', value: '100+' },
-                  { label: 'Monedas', value: '26+' },
+                  { label: 'Continentes', value: '2' },
+                  { label: 'Países', value: '5+' },
+                  { label: 'Monedas', value: '10+' },
                   { label: 'Coleccionistas', value: '3+' }
                 ].map((stat) => (
                   <Stat key={stat.label} textAlign="center">
