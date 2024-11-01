@@ -71,7 +71,7 @@ const NavBar = () => {
               cursor="pointer"
               _hover={{ color: 'blue.500' }}
             >
-              Perazo Coins
+              Perazzo Coins
             </Heading>
           </Link>
           <Flex align="center" gap={8}>
