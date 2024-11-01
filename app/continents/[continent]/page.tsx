@@ -19,6 +19,7 @@ export default function ContinentPage() {
 
   const [selectedCountry, setSelectedCountry] = useState(countryParam || '')
   const [selectedCoin, setSelectedCoin] = useState<any>(null)
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const [isLoading, setIsLoading] = useState(true)
 
@@ -86,6 +87,11 @@ export default function ContinentPage() {
   }
 
   const countries = Object.entries(continentInfo.countries)
+    .filter(([countryId]) => {
+      // Solo mostrar países que tienen monedas en coinsData
+      const countryCoins = coinsData[countryId as keyof typeof coinsData]
+      return countryCoins && countryCoins.length > 0
+    })
 
   if (countries.length === 0) {
     return (
@@ -169,36 +175,167 @@ export default function ContinentPage() {
             </Button>
             <Grid templateColumns={['1fr', '1fr', '1fr 1fr']} gap={8}>
               <Box>
-                <Image 
-                  src={selectedCoin.image} 
-                  alt={selectedCoin.name}
-                  borderRadius="lg"
-                  boxShadow="lg"
-                  width="100%"
-                  height="auto"
-                />
+                <Grid templateColumns="1fr 1fr" gap={4}>
+                  {selectedCoin.image && (
+                    <Box
+                      position="relative"
+                      cursor="pointer"
+                      onClick={() => setSelectedImage(selectedCoin.image)}
+                    >
+                      <Image 
+                        src={selectedCoin.image} 
+                        alt={`${selectedCoin.name} - Anverso`}
+                        borderRadius="lg"
+                        boxShadow="lg"
+                        width="100%"
+                        height="auto"
+                      />
+                      <Text 
+                        position="absolute" 
+                        bottom="2" 
+                        left="50%" 
+                        transform="translateX(-50%)"
+                        bg="blackAlpha.700"
+                        color="white"
+                        px={2}
+                        borderRadius="md"
+                        fontSize="sm"
+                      >
+                        Anverso
+                      </Text>
+                    </Box>
+                  )}
+                  {selectedCoin.reverseImage && (
+                    <Box
+                      position="relative"
+                      cursor="pointer"
+                      onClick={() => setSelectedImage(selectedCoin.reverseImage)}
+                    >
+                      <Image 
+                        src={selectedCoin.reverseImage} 
+                        alt={`${selectedCoin.name} - Reverso`}
+                        borderRadius="lg"
+                        boxShadow="lg"
+                        width="100%"
+                        height="auto"
+                      />
+                      <Text 
+                        position="absolute" 
+                        bottom="2" 
+                        left="50%" 
+                        transform="translateX(-50%)"
+                        bg="blackAlpha.700"
+                        color="white"
+                        px={2}
+                        borderRadius="md"
+                        fontSize="sm"
+                      >
+                        Reverso
+                      </Text>
+                    </Box>
+                  )}
+                </Grid>
+                {selectedImage && (
+                  <Box
+                    position="fixed"
+                    top="0"
+                    left="0"
+                    right="0"
+                    bottom="0"
+                    bg="blackAlpha.800"
+                    zIndex={1000}
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    onClick={() => setSelectedImage(null)}
+                  >
+                    <Image
+                      src={selectedImage}
+                      alt={selectedCoin.name}
+                      maxH="90vh"
+                      maxW="90vw"
+                      objectFit="contain"
+                    />
+                  </Box>
+                )}
               </Box>
               <Box>
                 <VStack align="stretch" spacing={4}>
                   <Heading size="xl">{selectedCoin.name}</Heading>
-                  <Text fontSize="lg" color="gray.500">
+                  <Text fontSize="lg" color="gray.500" mb={4}>
                     {continentInfo.countries[selectedCountry].flag} {' '}
                     {continentInfo.countries[selectedCountry].name}
                   </Text>
-                  <Box>
-                    <Badge colorScheme="purple" mr={2}>{selectedCoin.metal}</Badge>
-                    <Badge colorScheme="blue" mr={2}>{selectedCoin.weight}</Badge>
-                    <Badge colorScheme="green">{selectedCoin.purity}</Badge>
+                  <Box 
+                    overflowX="auto" 
+                    borderRadius="lg" 
+                    boxShadow="lg"
+                    bg={useColorModeValue('white', 'gray.800')}
+                  >
+                    <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: '0' }}>
+                      <tbody>
+                        {Object.entries(selectedCoin).map(([key, value], index) => {
+                          if (['id', 'name', 'image', 'reverseImage'].includes(key)) return null;
+                          
+                          const keyTranslations: { [key: string]: string } = {
+                            year: "Año",
+                            description: "Descripción",
+                            metal: "Metal",
+                            weight: "Peso",
+                            purity: "Pureza",
+                            numero: "Número",
+                            periodo: "Período",
+                            moneda: "Moneda",
+                            tipoMoneda: "Tipo de Moneda",
+                            denominacion: "Denominación",
+                            valorFusion: "Valor de Fusión",
+                            gobernante: "Gobernante",
+                            aleacion: "Aleación",
+                            canto: "Canto",
+                            forma: "Forma",
+                            alineacion: "Alineación",
+                            diametro: "Diámetro",
+                            grosor: "Grosor"
+                          };
+
+                          const formattedKey = keyTranslations[key] || key.charAt(0).toUpperCase() + 
+                            key.slice(1).replace(/([A-Z])/g, ' $1').trim();
+
+                          if (!value) return null;
+
+                          return (
+                            <tr 
+                              key={key}
+                              style={{ 
+                                backgroundColor: index % 2 === 0 
+                                  ? 'var(--chakra-colors-gray-50)' 
+                                  : 'transparent'
+                              }}
+                            >
+                              <td 
+                                style={{ 
+                                  padding: '12px 16px',
+                                  fontWeight: 'bold',
+                                  color: 'var(--chakra-colors-blue-600)',
+                                  width: '40%'
+                                }}
+                              >
+                                {formattedKey}
+                              </td>
+                              <td 
+                                style={{ 
+                                  padding: '12px 16px',
+                                  fontSize: '1.1em'
+                                }}
+                              >
+                                {value as string}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
                   </Box>
-                  <Box>
-                    <Text fontWeight="bold">Año de acuñación</Text>
-                    <Text>{selectedCoin.year}</Text>
-                  </Box>
-                  <Box>
-                    <Text fontWeight="bold">Descripción</Text>
-                    <Text>{selectedCoin.description}</Text>
-                  </Box>
-                  {/* Aquí puedes agregar más información detallada de la moneda */}
                 </VStack>
               </Box>
             </Grid>

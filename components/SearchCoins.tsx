@@ -38,6 +38,19 @@ interface Coin {
   weight: string
   purity: string
   country?: string
+  numero: string
+  periodo: string
+  moneda: string
+  tipoMoneda: string
+  denominacion: string
+  valorFusion: string
+  gobernante: string
+  aleacion: string
+  canto: string
+  forma: string
+  alineacion: string
+  diametro: string
+  grosor: string
 }
 
 export default function SearchCoins() {
@@ -77,7 +90,7 @@ export default function SearchCoins() {
     const allCoins: Coin[] = []
     Object.entries(coinsData).forEach(([country, countryCoins]) => {
       countryCoins.forEach(coin => {
-        allCoins.push({ ...coin, country })
+        allCoins.push({ ...coin, country, year: parseInt(coin.year) })
       })
     })
     setCoins(allCoins)
@@ -272,7 +285,33 @@ export default function SearchCoins() {
                         <Badge colorScheme="blue">{coin.year}</Badge>
                         <Badge colorScheme="purple">{coin.metal}</Badge>
                         <Badge colorScheme="green">{coin.weight}</Badge>
+                        {coin.denominacion && (
+                          <Badge colorScheme="orange">{coin.denominacion}</Badge>
+                        )}
+                        {coin.tipoMoneda && (
+                          <Badge colorScheme="teal">{coin.tipoMoneda}</Badge>
+                        )}
                       </Flex>
+                      <VStack align="start" spacing={1} mt={2}>
+                        {coin.periodo && (
+                          <Text fontSize="sm">
+                            <Text as="span" fontWeight="bold">Período:</Text> {coin.periodo}
+                          </Text>
+                        )}
+                        {coin.gobernante && (
+                          <Text fontSize="sm">
+                            <Text as="span" fontWeight="bold">Gobernante:</Text> {coin.gobernante}
+                          </Text>
+                        )}
+                        {coin.aleacion && (
+                          <Text fontSize="sm">
+                            <Text as="span" fontWeight="bold">Aleación:</Text> {coin.aleacion}
+                          </Text>
+                        )}
+                        <Text fontSize="sm">
+                          <Text as="span" fontWeight="bold">Medidas:</Text> {coin.diametro}mm × {coin.grosor}mm
+                        </Text>
+                      </VStack>
                     </Stack>
                   </CardBody>
                 </Card>

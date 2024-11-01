@@ -11,6 +11,10 @@
         "name": "Canada",
         "flag": "🇨🇦"
       },
+      "Mexico": {
+        "name": "Mexico",
+        "flag": "🇲🇽"
+      },
       "Brazil": {
         "name": "Brazil",
         "flag": "🇧🇷"
@@ -18,6 +22,18 @@
       "Argentina": {
         "name": "Argentina",
         "flag": "🇦🇷"
+      },
+      "Chile": {
+        "name": "Chile",
+        "flag": "🇨🇱"
+      },
+      "Colombia": {
+        "name": "Colombia",
+        "flag": "🇨🇴"
+      },
+      "Peru": {
+        "name": "Peru",
+        "flag": "🇵🇪"
       }
     }
   },

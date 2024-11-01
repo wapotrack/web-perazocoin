@@ -537,6 +537,9 @@ video {
     max-width: 1536px;
   }
 }
+.collapse {
+  visibility: collapse;
+}
 .fixed {
   position: fixed;
 }
@@ -548,6 +551,12 @@ video {
 }
 .sticky {
   position: sticky;
+}
+.flex {
+  display: flex;
+}
+.table {
+  display: table;
 }
 .hidden {
   display: none;
