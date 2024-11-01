@@ -117,15 +117,15 @@ export default function StartPage() {
                 </Stat>
                 <Stat>
                   <StatLabel>Países</StatLabel>
-                  <StatNumber>45+</StatNumber>
-                </Stat>
-                <Stat>
-                  <StatLabel>Monedas</StatLabel>
                   <StatNumber>100+</StatNumber>
                 </Stat>
                 <Stat>
+                  <StatLabel>Monedas</StatLabel>
+                  <StatNumber>26+</StatNumber>
+                </Stat>
+                <Stat>
                   <StatLabel>Coleccionistas</StatLabel>
-                  <StatNumber>1000+</StatNumber>
+                  <StatNumber>3+</StatNumber>
                 </Stat>
               </StatGroup>
             </VStack>
