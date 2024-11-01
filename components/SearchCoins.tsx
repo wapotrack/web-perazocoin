@@ -43,14 +43,14 @@ interface Coin {
   moneda: string
   tipoMoneda: string
   denominacion: string
-  valorFusion: string
-  gobernante: string
-  aleacion: string
-  canto: string
-  forma: string
-  alineacion: string
-  diametro: string
-  grosor: string
+  valorFusion?: string
+  gobernante?: string
+  aleacion?: string
+  canto?: string
+  forma?: string
+  alineacion?: string
+  diametro?: string
+  grosor?: string
 }
 
 export default function SearchCoins() {
