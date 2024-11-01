@@ -34,7 +34,8 @@ const collaborators: Collaborator[] = [
     name: 'Ezequiel Aranda',
     role: 'Investigador',
     description: 'Especialista en monedas antiguas de América Latina. Búsqueda y verificación de información histórica. Primer contribuidor de Perazzo Coins.',
-    image: 'https://i.pinimg.com/564x/02/56/b0/0256b0596fb33c41abf792eb9b64393e.jpg',
+    
+    image: 'https://media.discordapp.net/attachments/1239394562657747007/1301778845707534366/image.png?ex=6725b786&is=67246606&hm=f586d225f27c44bcdb048c4a6fb496f384d98c1ca8089c0b530567cccc23fb94&=&format=webp&quality=lossless&width=351&height=437',
     specialty: ['Monedas Coloniales', 'Numismática Latinoamericana'],
     contributions: 145,
     joined: 'Marzo 1998'
@@ -46,7 +47,7 @@ const leaders = [
     name: 'Santino Silvero',
     role: 'Desarrollador Principal',
     description: 'Líder técnico y desarrollador full-stack. Responsable de la arquitectura y desarrollo del sistema completo de Perazzo Coins.',
-    image: 'https://i.pinimg.com/564x/46/31/ea/4631ea36247e2f279253edddf2f09e29.jpg', // Puedes reemplazar con la imagen real
+    image: 'https://i.pinimg.com/564x/5e/e1/a7/5ee1a7e5fb702b70514e21c3dfe1069d.jpg', // Puedes reemplazar con la imagen real
     specialty: ['Full Stack', 'Arquitectura', 'UI/UX'],
     contributions: 50125012089,
     joined: 'Enero 1980',
@@ -57,7 +58,7 @@ const leaders = [
     name: 'Bautista González',
     role: 'Project Manager',
     description: 'Líder del proyecto y coordinador general. Encargado de la gestión, planificación y dirección estratégica de Perazzo Coins.',
-    image: 'https://i.pinimg.com/564x/6f/f7/dc/6ff7dc5e01f16349d9f9868e8da97e36.jpg', // Puedes reemplazar con la imagen real
+    image: 'https://media.discordapp.net/attachments/1239394562657747007/1301778667822907482/image.png?ex=6725b75c&is=672465dc&hm=27eaea7e4bb96d144bd27bc8090d14088199e287c7a352db812f2df72aba390d&=&format=webp&quality=lossless&width=301&height=270', // Puedes reemplazar con la imagen real
     specialty: ['Gestión', 'Estrategia', 'Planificación'],
     contributions: 10000000,
     joined: 'Enero 1980',
@@ -174,7 +175,13 @@ export default function AboutPage() {
                 Conoce a los expertos detrás de nuestra extensa base de datos numismática
               </Text>
               
-              <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
+              <SimpleGrid 
+                columns={{ base: 1, md: 2, lg: 3 }} 
+                spacing={8}
+                justifyItems="center"
+                maxW="1200px"
+                mx="auto"
+              >
                 {collaborators.map((collaborator) => (
                   <Box
                     key={collaborator.name}
