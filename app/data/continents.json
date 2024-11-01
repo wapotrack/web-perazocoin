@@ -1,0 +1,46 @@
+{
+  "america": {
+    "name": "America",
+    "gradient": "linear(to-r, red.400, orange.500)",
+    "countries": {
+      "USA": {
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "Canada": {
+        "name": "Canada",
+        "flag": "🇨🇦"
+      },
+      "Brazil": {
+        "name": "Brazil",
+        "flag": "🇧🇷"
+      },
+      "Argentina": {
+        "name": "Argentina",
+        "flag": "🇦🇷"
+      }
+    }
+  },
+  "europe": {
+    "name": "Europe",
+    "gradient": "linear(to-r, blue.400, teal.500)",
+    "countries": {
+      "UK": {
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "Germany": {
+        "name": "Germany",
+        "flag": "🇩🇪"
+      },
+      "France": {
+        "name": "France",
+        "flag": "🇫🇷"
+      },
+      "Spain": {
+        "name": "Spain",
+        "flag": "🇪🇸"
+      }
+    }
+  }
+} 

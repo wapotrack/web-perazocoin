@@ -1,0 +1,60 @@
+{
+  "USA": [
+    {
+      "id": "usa-eagle-2021",
+      "name": "American Eagle",
+      "year": 2021,
+      "image": "https://placehold.co/200x200",
+      "description": "The American Eagle gold coin",
+      "metal": "Gold",
+      "weight": "1 oz",
+      "purity": "0.9167"
+    },
+    {
+      "id": "usa-buffalo-2020",
+      "name": "Buffalo",
+      "year": 2020,
+      "image": "https://placehold.co/200x200",
+      "description": "The American Buffalo gold coin",
+      "metal": "Gold",
+      "weight": "1 oz",
+      "purity": "0.9999"
+    }
+  ],
+  "Canada": [
+    {
+      "id": "can-maple-2021",
+      "name": "Maple Leaf",
+      "year": 2021,
+      "image": "https://placehold.co/200x200",
+      "description": "The Canadian Maple Leaf gold coin",
+      "metal": "Gold",
+      "weight": "1 oz",
+      "purity": "0.9999"
+    }
+  ],
+  "UK": [
+    {
+      "id": "uk-britannia-2021",
+      "name": "Britannia",
+      "year": 2021,
+      "image": "https://placehold.co/200x200",
+      "description": "The Britannia gold coin",
+      "metal": "Gold",
+      "weight": "1 oz",
+      "purity": "0.9999"
+    }
+  ],
+  "Argentina": [
+    {
+      "id": "arg-sexocoin-2024",
+      "name": "Sexocoin",
+      "year": 1840,
+      "image": "https://i.pinimg.com/736x/9f/4c/23/9f4c23d2d0b85c93d40c5286102fb8fb.jpg",
+      "description": "Es una super moneda con la cual te podes pagar unas buenas trolas",
+      "metal": "Adamantium",
+      "weight": "19kg",
+      "purity": "200"
+    }
+  ]
+}

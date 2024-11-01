@@ -1,0 +1,80 @@
+{
+  "america": {
+    "name": "America",
+    "countries": {
+      "USA": { "name": "United States", "flag": "🇺🇸" },
+      "Canada": { "name": "Canada", "flag": "🇨🇦" },
+      "Mexico": { "name": "Mexico", "flag": "🇲🇽" },
+      "Brazil": { "name": "Brazil", "flag": "🇧🇷" },
+      "Argentina": { "name": "Argentina", "flag": "🇦🇷" },
+      "Chile": { "name": "Chile", "flag": "🇨🇱" },
+      "Colombia": { "name": "Colombia", "flag": "🇨🇴" },
+      "Peru": { "name": "Peru", "flag": "🇵🇪" },
+      "Venezuela": { "name": "Venezuela", "flag": "🇻🇪" },
+      "Uruguay": { "name": "Uruguay", "flag": "🇺🇾" }
+    }
+  },
+  "europe": {
+    "name": "Europe",
+    "countries": {
+      "UK": { "name": "United Kingdom", "flag": "🇬🇧" },
+      "Germany": { "name": "Germany", "flag": "🇩🇪" },
+      "France": { "name": "France", "flag": "🇫🇷" },
+      "Spain": { "name": "Spain", "flag": "🇪🇸" },
+      "Italy": { "name": "Italy", "flag": "🇮🇹" },
+      "Netherlands": { "name": "Netherlands", "flag": "🇳🇱" },
+      "Portugal": { "name": "Portugal", "flag": "🇵🇹" },
+      "Switzerland": { "name": "Switzerland", "flag": "🇨🇭" },
+      "Austria": { "name": "Austria", "flag": "🇦🇹" },
+      "Belgium": { "name": "Belgium", "flag": "🇧🇪" },
+      "Sweden": { "name": "Sweden", "flag": "🇸🇪" },
+      "Norway": { "name": "Norway", "flag": "🇳🇴" },
+      "Denmark": { "name": "Denmark", "flag": "🇩🇰" },
+      "Finland": { "name": "Finland", "flag": "🇫🇮" },
+      "Greece": { "name": "Greece", "flag": "🇬🇷" }
+    }
+  },
+  "asia": {
+    "name": "Asia",
+    "countries": {
+      "Japan": { "name": "Japan", "flag": "🇯🇵" },
+      "China": { "name": "China", "flag": "🇨🇳" },
+      "South_Korea": { "name": "South Korea", "flag": "🇰🇷" },
+      "India": { "name": "India", "flag": "🇮🇳" },
+      "Singapore": { "name": "Singapore", "flag": "🇸🇬" },
+      "Thailand": { "name": "Thailand", "flag": "🇹🇭" },
+      "Vietnam": { "name": "Vietnam", "flag": "🇻🇳" },
+      "Malaysia": { "name": "Malaysia", "flag": "🇲🇾" },
+      "Indonesia": { "name": "Indonesia", "flag": "🇮🇩" },
+      "Philippines": { "name": "Philippines", "flag": "🇵🇭" }
+    }
+  },
+  "africa": {
+    "name": "Africa",
+    "countries": {
+      "South_Africa": { "name": "South Africa", "flag": "🇿🇦" },
+      "Egypt": { "name": "Egypt", "flag": "🇪🇬" },
+      "Morocco": { "name": "Morocco", "flag": "🇲🇦" },
+      "Nigeria": { "name": "Nigeria", "flag": "🇳🇬" },
+      "Kenya": { "name": "Kenya", "flag": "🇰🇪" },
+      "Ghana": { "name": "Ghana", "flag": "🇬🇭" },
+      "Ethiopia": { "name": "Ethiopia", "flag": "🇪🇹" },
+      "Tanzania": { "name": "Tanzania", "flag": "🇹🇿" },
+      "Uganda": { "name": "Uganda", "flag": "🇺🇬" },
+      "Algeria": { "name": "Algeria", "flag": "🇩🇿" }
+    }
+  },
+  "oceania": {
+    "name": "Oceania",
+    "countries": {
+      "Australia": { "name": "Australia", "flag": "🇦🇺" },
+      "New_Zealand": { "name": "New Zealand", "flag": "🇳🇿" },
+      "Fiji": { "name": "Fiji", "flag": "🇫🇯" },
+      "Papua_New_Guinea": { "name": "Papua New Guinea", "flag": "🇵🇬" },
+      "Solomon_Islands": { "name": "Solomon Islands", "flag": "🇸🇧" },
+      "Vanuatu": { "name": "Vanuatu", "flag": "🇻🇺" },
+      "New_Caledonia": { "name": "New Caledonia", "flag": "🇳🇨" },
+      "French_Polynesia": { "name": "French Polynesia", "flag": "🇵🇫" }
+    }
+  }
+} 
