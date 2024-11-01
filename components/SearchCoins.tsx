@@ -81,7 +81,7 @@ export default function SearchCoins() {
     new Set(
       Object.values(coinsData)
         .flat()
-        .map(coin => coin.year)
+        .map(coin => Number(coin.year))
     )
   ).sort((a, b) => b - a)
 

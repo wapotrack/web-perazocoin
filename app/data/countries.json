@@ -11,7 +11,8 @@
       "Colombia": { "name": "Colombia", "flag": "🇨🇴" },
       "Peru": { "name": "Peru", "flag": "🇵🇪" },
       "Venezuela": { "name": "Venezuela", "flag": "🇻🇪" },
-      "Uruguay": { "name": "Uruguay", "flag": "🇺🇾" }
+      "Uruguay": { "name": "Uruguay", "flag": "🇺🇾" }, 
+      "Bolivia": { "name": "Bolivia", "flag": "🇧🇴" }
     }
   },
   "europe": {
